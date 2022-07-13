@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,30 +14,32 @@
     <title>Easybank</title>
   </head>
   <body>
-    <header class="container">
-      <img src="images/logo.svg" alt="" />
+    <header>
+      <div class="header-container container">
+        <img src="images/logo.svg" alt="" />
 
-      <nav>
-        <ul role="list" class="header-menu fs-300">
-          <li class="header-nav-item">
-            <a href="#" class="text-primary">Home</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="text-primary">About</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="text-primary">Contact</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="text-primary">Blog</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="#" class="text-primary">Careers</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul role="list" class="header-menu fs-300">
+            <li class="header-nav-item">
+              <a href="#" class="text-primary">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#" class="text-primary">About</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#" class="text-primary">Contact</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#" class="text-primary">Blog</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#" class="text-primary">Careers</a>
+            </li>
+          </ul>
+        </nav>
 
-      <a href="#" class="btn fs-300 fw-regular">Request Invite</a>
+        <a href="#" class="btn fs-300 fw-regular">Request Invite</a>
+      </div>
     </header>
 
     <main>
@@ -55,17 +57,18 @@
             <a href="#" class="btn fs-300 fw-regular">Request Invite</a>
           </div>
 
-          <div>
+          <div class="hero-image-container">
             <img
               src="/images/image-mockups.png"
               class="hero-image"
               alt="Phones showing bank account summary"
+              loading="eager"
             />
           </div>
         </div>
       </section>
 
-      <section class="value-props-container bg-neutral-accent">
+      <section class="section-container bg-neutral-accent">
         <div class="container">
           <h2 class="value-prop-header fs-600 fw-light">
             Why choose Easybank?
@@ -78,7 +81,7 @@
             Control your finances like never before.
           </p>
 
-          <div class="value-props-cards">
+          <div class="col-grid-4">
             <div class="value-prop">
               <img
                 src="/images/icon-online.svg"
@@ -134,20 +137,95 @@
         </div>
       </section>
 
-      <section>
-        <h2>Latest Articles</h2>
-        <section>
-          <img src="/images/image-currency.jpg" alt="world currency" />
-          <p>By Claire Robinson</p>
-          <h4>Receive money in any currency with no fees</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            omnis fuga, vero obcaecati culpa dolor ea dolorem velit rerum, modi,
-            alias et error magnam esse fugiat quaerat repellat cumque ab.
-          </p>
-        </section>
+      <section class="bg-primary section-container">
+        <div class="container">
+          <h2 class="fs-600 fw-light">Latest Articles</h2>
+          <div class="col-grid-4">
+            <section>
+              <img
+                src="/images/image-currency.jpg"
+                class="article-card-image"
+                alt="world currency"
+              />
+              <div class="article-card-text-container">
+                <p class="fs-200 text-primary">By Claire Robinson</p>
+                <h4 class="fs-400">
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="fs-300 text-primary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi omnis fuga, vero obcaecati culpa dolor ea dolorem
+                  velit rerum, modi, alias et error magnam esse fugiat quaerat
+                  repellat cumque ab.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <img
+                src="/images/image-currency.jpg"
+                class="article-card-image"
+                alt="world currency"
+              />
+              <div class="article-card-text-container">
+                <p class="fs-200 text-primary">By Claire Robinson</p>
+                <h4 class="fs-400">
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="fs-300 text-primary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi omnis fuga, vero obcaecati culpa dolor ea dolorem
+                  velit rerum, modi, alias et error magnam esse fugiat quaerat
+                  repellat cumque ab.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <img
+                src="/images/image-currency.jpg"
+                class="article-card-image"
+                alt="world currency"
+              />
+              <div class="article-card-text-container">
+                <p class="fs-200 text-primary">By Claire Robinson</p>
+                <h4 class="fs-400">
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="fs-300 text-primary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi omnis fuga, vero obcaecati culpa dolor ea dolorem
+                  velit rerum, modi, alias et error magnam esse fugiat quaerat
+                  repellat cumque ab.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <img
+                src="/images/image-currency.jpg"
+                class="article-card-image"
+                alt="world currency"
+              />
+              <div class="article-card-text-container">
+                <p class="fs-200 text-primary">By Claire Robinson</p>
+                <h4 class="fs-400">
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="fs-300 text-primary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi omnis fuga, vero obcaecati culpa dolor ea dolorem
+                  velit rerum, modi, alias et error magnam esse fugiat quaerat
+                  repellat cumque ab.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer></footer>
 
     <script type="module" src="/main.js"></script>
   </body>
