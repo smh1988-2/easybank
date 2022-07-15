@@ -267,10 +267,16 @@ header nav {
 .header-nav-item {
   padding: 20px;
   position: relative;
+  transition: color 0.3s;
 }
 
 .header-nav-item a {
   text-decoration: none;
+}
+
+.header-nav-item:hover {
+  color: var(--primary-blue);
+  
 }
 
 .header-nav-item:hover:before {
@@ -355,6 +361,7 @@ header nav {
 
 .article-title {
   transition: color 0.3s;
+  line-height: 1.2;
 }
 
 .article-title:hover {
@@ -388,6 +395,10 @@ header nav {
   padding-top: 30px;
 }
 
+.social-icon:hover {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(41%) saturate(410%) hue-rotate(93deg) brightness(88%) contrast(92%);
+}
+
 .footer-nav {
   display: grid;
   gap: 50px;
@@ -404,6 +415,11 @@ header nav {
 
 .footer-menu-link {
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-menu-link:hover {
+  color: var(--primary-lime);
 }
 
 .cta-legal-container {
